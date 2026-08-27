@@ -2,7 +2,8 @@
 
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { useEditor, EditorContent, BubbleMenu, FloatingMenu } from '@tiptap/react';
+import { useEditor, EditorContent } from '@tiptap/react';
+import { BubbleMenu, FloatingMenu } from '@tiptap/react/menus';
 import StarterKit from '@tiptap/starter-kit';
 import Underline from '@tiptap/extension-underline';
 import Placeholder from '@tiptap/extension-placeholder';
@@ -530,7 +531,7 @@ export default function DocumentEditorPage({ params }: { params: Promise<{ id: s
       <div className="flex-1 max-w-4xl mx-auto w-full flex flex-col">
         <div className="glass-card my-6 mx-4 flex-1 min-h-[70vh] relative">
           {editor && !isReadOnly && (
-            <BubbleMenu editor={editor} tippyOptions={{ duration: 100 }} className="flex items-center gap-1 p-1 bg-surface-800 border border-surface-600 rounded-lg shadow-xl">
+            <BubbleMenu editor={editor} className="flex items-center gap-1 p-1 bg-surface-800 border border-surface-600 rounded-lg shadow-xl">
               <button onClick={() => editor.chain().focus().toggleBold().run()} className={`p-1.5 rounded hover:bg-surface-700 ${editor.isActive('bold') ? 'text-brand-400' : 'text-surface-200'}`}>
                 <BoldIcon className="w-4 h-4" />
               </button>
@@ -557,7 +558,7 @@ export default function DocumentEditorPage({ params }: { params: Promise<{ id: s
           )}
 
           {editor && !isReadOnly && (
-            <FloatingMenu editor={editor} tippyOptions={{ duration: 100 }} className="flex items-center gap-1 p-1 bg-surface-800 border border-surface-600 rounded-lg shadow-xl">
+            <FloatingMenu editor={editor} className="flex items-center gap-1 p-1 bg-surface-800 border border-surface-600 rounded-lg shadow-xl">
               <button onClick={() => editor.chain().focus().toggleHeading({ level: 1 }).run()} className={`p-1.5 rounded hover:bg-surface-700 text-surface-200`}>
                 <Heading1 className="w-4 h-4" />
               </button>
