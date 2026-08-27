@@ -51,16 +51,20 @@ Given the 4-6 hour timebox, I prioritized a **robust core editing experience, a 
 - **File Uploads:** Handled server-side using `mammoth` (DOCX), `pdf-parse` (PDF), and `marked` (Markdown). To avoid 431 Request URL limits on large documents, the converted HTML payload is passed securely to the editor via `localStorage`.
 
 ### What is Working (Scope)
-- ✅ **Document Creation & Editing:** Full rich-text support. Debounced auto-save triggers every 1.5s.
+- ✅ **Document Creation & Editing:** Full rich-text support including Task Lists, Text Alignment, and Smart Typography. Debounced auto-save triggers every 1.5s.
+- ✅ **Premium UI/UX:** Floating contextual "Bubble" menu on text selection and slash-style "Floating" menu on new lines for immediate block insertion. 
+- ✅ **Live Stats:** Real-time Word count, Character count, and Estimated Reading Time displayed seamlessly in the editor footer.
 - ✅ **File Imports:** Seamlessly upload `.txt`, `.md`, `.docx`, and `.pdf` files. They are parsed server-side and converted directly into editable Tiptap JSON.
 - ✅ **Sharing Model:** Owners can grant explicit "View" or "Edit" permissions to other users. The Dashboard clearly separates "My Documents" from "Shared with Me".
 - ✅ **Version History:** Users can manually trigger a "Save Version" snapshot and restore it later.
-- ✅ **Export:** Export documents to PDF client-side using `jspdf`.
+- ✅ **Export:** Export documents to PDF or Markdown natively on the client side.
+- ✅ **Image Support:** Users can instantly embed rich images into documents via URL.
 
 ### What I would build next (with another 2-4 hours)
 - Implement True Real-Time Collaboration using Tiptap's Hocuspocus/Yjs WebSocket integration.
 - Implement folder organization and drag-and-drop hierarchy in the dashboard.
 - Replace the mock auth with Google OAuth via NextAuth.
+- Full text search across document content.
 
 ---
 

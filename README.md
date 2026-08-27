@@ -23,13 +23,17 @@ No passwords required — click any user card to log in.
 
 ### ✅ Core Features (Fully Implemented)
 - **Document CRUD** — Create, rename, edit, delete documents
-- **Rich Text Editor** — Bold, Italic, Underline, Highlight, Headings (H1-H3), Bullet/Ordered Lists, Blockquote, Code Block, Horizontal Rule
+- **Rich Text Editor** — Bold, Italic, Underline, Highlight, Headings (H1-H3), Bullet/Ordered Lists, Task Lists, Blockquote, Code Block, Horizontal Rule
+- **Advanced Formatting** — Text Alignment (Left/Center/Right), Smart Typography (auto-curly quotes, arrows)
+- **Rich Media** — Embed images via URL directly into the document
+- **Premium UI / Menus** — Contextual Bubble Menu for selection formatting and Floating Menu for quick block insertion
+- **Live Stats** — Real-time word count, character count, and estimated reading time
 - **Auto-save** — Debounced saves every 1.5 seconds
 - **File Upload** — Import `.txt`, `.md`, `.docx`, `.pdf` → editable documents
 - **Sharing** — Owner can share documents with edit or view permissions
 - **Access Control** — Owner, Editor, Viewer roles with enforcement
 - **Version History** — Manual version snapshots with restore capability
-- **Export to PDF** — Download any document as PDF
+- **Export** — Download any document as PDF or Markdown
 - **Persistence** — All data persisted in PostgreSQL (Neon)
 - **Responsive Design** — Works on desktop, tablet, and mobile
 
@@ -95,6 +99,7 @@ Open [http://localhost:3000](http://localhost:3000) to use the app.
 | Icons | Lucide React | Modern, tree-shakeable icon set |
 | Toasts | react-hot-toast | Lightweight notification system |
 | PDF Export | jsPDF | Client-side PDF generation |
+| Markdown Export | turndown | HTML to Markdown conversion |
 | File Import | mammoth.js, marked, pdf-parse | .docx/.md/.pdf conversion |
 | Testing | Vitest | Fast, modern test runner |
 
@@ -139,14 +144,17 @@ docflow/
 |---------|--------|
 | User login (pick-a-user) | ✅ Working |
 | Document create/read/update/delete | ✅ Working |
-| Rich text formatting (bold, italic, underline, headings, lists, etc.) | ✅ Working |
+| Rich text formatting (typography, alignment, lists, tasks) | ✅ Working |
+| Premium menus (Bubble & Floating menus) | ✅ Working |
+| Live stats (Word count, read time) | ✅ Working |
+| Image embedding (via URL) | ✅ Working |
 | Auto-save with debounce | ✅ Working |
 | Inline title rename | ✅ Working |
 | File upload (.txt, .md, .docx, .pdf) | ✅ Working |
 | Document sharing (edit/view permissions) | ✅ Working |
 | Dashboard (My Docs + Shared with Me) | ✅ Working |
 | Version history with restore | ✅ Working |
-| Export to PDF | ✅ Working |
+| Export to PDF & Markdown | ✅ Working |
 | Responsive design | ✅ Working |
 | Automated tests | ✅ 6 passing |
 
@@ -154,7 +162,6 @@ docflow/
 
 1. **Real-time collaboration** — Y.js or Liveblocks for simultaneous editing
 2. **Comments/annotations** — Inline comments on text selections
-3. **Image upload** — Embed images in documents
-4. **Full text search** — Search across document content, not just titles
-5. **Keyboard shortcuts** — Power-user keybindings for all toolbar actions
-6. **Mobile editor toolbar** — Horizontal scroll toolbar for small screens
+3. **Full text search** — Search across document content, not just titles
+4. **Keyboard shortcuts** — Power-user keybindings for all toolbar actions
+5. **Mobile editor toolbar** — Horizontal scroll toolbar for small screens
