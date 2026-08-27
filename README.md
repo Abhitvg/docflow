@@ -6,7 +6,7 @@ A lightweight collaborative document editor with rich-text editing, file upload/
 
 ## Live Demo
 
-🔗 **[docflow-ajaia.vercel.app](https://docflow-ajaia.vercel.app)** *(deployment URL will be updated)*
+🔗 **[docflow-ashy.vercel.app](https://docflow-ashy.vercel.app/)**
 
 ### Test Accounts
 | User | Email | Role |
