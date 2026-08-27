@@ -155,13 +155,18 @@ docflow/
 | Dashboard (My Docs + Shared with Me) | ✅ Working |
 | Version history with restore | ✅ Working |
 | Export to PDF & Markdown | ✅ Working |
+| Real-time collaboration (simultaneous editing) | ✅ Working |
+| Inline Comments / Annotations | ✅ Working |
+| Full text search across document content | ✅ Working |
+| Power-user Keyboard Shortcuts | ✅ Working |
+| Mobile-responsive horizontal toolbar | ✅ Working |
 | Responsive design | ✅ Working |
 | Automated tests | ✅ 6 passing |
 
 ## What Would Come Next (2-4 More Hours)
 
-1. **Real-time collaboration** — Y.js or Liveblocks for simultaneous editing
-2. **Comments/annotations** — Inline comments on text selections
-3. **Full text search** — Search across document content, not just titles
-4. **Keyboard shortcuts** — Power-user keybindings for all toolbar actions
-5. **Mobile editor toolbar** — Horizontal scroll toolbar for small screens
+1. **AI Writing Assistant** — Context-aware text generation, summarization, and autocomplete using LLMs.
+2. **Folder Structures & Workspaces** — Deep hierarchy and nested folders for organizing large knowledge bases.
+3. **Offline Support** — Full PWA capabilities with local-first syncing and conflict resolution.
+4. **Document Templates** — Reusable starter templates for PRDs, meeting notes, and technical specs.
+5. **Canvas Mode** — Infinite whiteboard integration for spatial reasoning and diagramming alongside text.

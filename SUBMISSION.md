@@ -60,11 +60,15 @@ Given the 4-6 hour timebox, I prioritized a **robust core editing experience, a 
 - ✅ **Export:** Export documents to PDF or Markdown natively on the client side.
 - ✅ **Image Support:** Users can instantly embed rich images into documents via URL.
 
+- ✅ **Advanced Document Capabilities:** Real-time collaboration (simultaneous editing), inline comments/annotations, and full text search across document content.
+- ✅ **UX/UI Polish:** Built-in power-user keyboard shortcuts for all formatting and a mobile-responsive horizontal toolbar for editing on the go.
+
 ### What I would build next (with another 2-4 hours)
-- Implement True Real-Time Collaboration using Tiptap's Hocuspocus/Yjs WebSocket integration.
-- Implement folder organization and drag-and-drop hierarchy in the dashboard.
-- Replace the mock auth with Google OAuth via NextAuth.
-- Full text search across document content.
+- **AI Writing Assistant:** Context-aware text generation, summarization, and autocomplete using LLMs.
+- **Folder Structures & Workspaces:** Deep hierarchy and nested folders for organizing large knowledge bases.
+- **Offline Support:** Full PWA capabilities with local-first syncing and conflict resolution.
+- **Document Templates:** Reusable starter templates for PRDs, meeting notes, and technical specs.
+- **Canvas Mode:** Infinite whiteboard integration for spatial reasoning and diagramming alongside text.
 
 ---
 
